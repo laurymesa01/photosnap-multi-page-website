@@ -4,9 +4,7 @@ nav {
 }
 
 .nav-container ul{
-    list-style: none;
     margin-left: 9em;
-    /* text-align: center; */
 }
 
 .nav-container li{
@@ -26,6 +24,7 @@ button{
     width: 10%;
     border: none;
     text-transform: uppercase;
+    margin-left: 30%;
 }
 
 button:hover{
