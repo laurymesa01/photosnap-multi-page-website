@@ -2,9 +2,26 @@ nav {
     margin-top: 1em;
     margin-bottom: 1em;
 }
+.nav-container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+}
 
-.nav-container ul{
-    margin-left: 9em;
+.nav-container .logo-img{
+    display: flex;
+    place-content: center;
+    margin-top: 10px;
+}
+
+.logo-img img{
+    height: 70%;
+    width: 40%;
+}
+
+.nav-container .list-items{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .nav-container li{
@@ -13,18 +30,18 @@ nav {
     margin-right: 2rem;
 }
 
-.links{
-    text-align: center;
+.nav-container .button-header-container{
+    display: flex;
+    justify-content: center;
 }
 
 button{
     background-color: black;
     color: white;
     height: 35px;
-    width: 10%;
+    width: 30%;
     border: none;
     text-transform: uppercase;
-    margin-left: 30%;
 }
 
 button:hover{

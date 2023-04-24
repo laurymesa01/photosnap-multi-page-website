@@ -1,8 +1,29 @@
-body{
+*{
     margin: 0;
     padding: 0;
+}
+
+body{
     font-family: 'Open Sans';
     font-size: 15px;
+    color: white;
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 2em;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+h4{
+    font-weight: bold;
+    font-size: 12px;
 }
 
 a{
@@ -10,4 +31,123 @@ a{
     color: black;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 700px 400px 400px 400px 400px;
+}
+
+.container a{
+    color: white;
+}
+
+.col1{
+    background: url('../assets/stories/desktop/moon-of-appalacia.jpg');
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.col1 p, .col1 a{
+    margin-left: 5.2em;
+    margin-top: 10px;
+}
+
+.col1 h3{
+    margin-left: 4.5em;
+    margin-bottom: 10px;
+}
+
+.col1 h4{
+    margin-top: 13px;
+    margin-left: 20px;
+}
+
+.col1 .date-author{
+    display: flex;
+}
+
+.col2{
+    background: url('../assets/stories/desktop/mountains.jpg');
+    background-size: cover;
+}
+
+.col3{
+    background: url('../assets/stories/desktop/cityscapes.jpg');
+    background-size: cover;
+}
+
+.col4{
+    background: url('../assets/stories/desktop/18-days-voyage.jpg');
+    background-size: cover;
+}
+
+.col5{
+    background: url('../assets/stories/desktop/architecturals.jpg');
+    background-size: cover;
+}
+
+.col6{
+    background: url('../assets/stories/desktop/world-tour.jpg');
+    background-size: cover;
+}
+
+.col7{
+    background: url('../assets/stories/desktop/unforeseen-corners.jpg');
+    background-size: cover;
+}
+
+.col8{
+    background: url('../assets/stories/desktop/king-on-africa.jpg');
+    background-size: cover;
+}
+
+.col9{
+    background: url('../assets/stories/desktop/trip-to-nowhere.jpg');
+    background-size: cover;
+}
+
+.col10{
+    background: url('../assets/stories/desktop/rage-of-the-sea.jpg');
+    background-size: cover;
+}
+
+.col11{
+    background: url('../assets/stories/desktop/running-free.jpg');
+    background-size: cover;
+}
+
+.col12{
+    background: url('../assets/stories/desktop/behind-the-waves.jpg');
+    background-size: cover;
+}
+
+.col13{
+    background: url('../assets/stories/desktop/calm-waters.jpg');
+    background-size: cover;
+}
+
+.col14{
+    background: url('../assets/stories/desktop/milky-way.jpg');
+    background-size: cover;
+}
+
+.col15{
+    background: url('../assets/stories/desktop/dark-forest.jpg');
+    background-size: cover;
+}
+
+.col16{
+    background: url('../assets/stories/desktop/somwarpet.jpg');
+    background-size: cover;
+}
+
+.col17{
+    background: url('../assets/stories/desktop/land-of-dreams.jpg');
+    background-size: cover;
 }

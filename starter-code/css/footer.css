@@ -6,7 +6,7 @@
     height: 250px;
 }
 
-.footer-container .col1, .footer-container .col3{
+.footer-container .footer-icons-container, .footer-container .section3{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,15 +21,24 @@
 
 .social-media li{
     padding-right: 10px;
+    cursor: pointer;
 }
 
-.footer-container .col2{
+.social-media img{
+    filter:grayscale(100%);
+}
+
+.social-media img:hover{
+    filter:grayscale(0%);
+}
+
+.footer-container .footer-links-container{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.footer-container .col2 li{
+.footer-container .footer-links-container li{
     margin-top: 20px;
     text-transform: uppercase;
 }
