@@ -55,3 +55,7 @@
 .footer-container a:hover{
     color: lightgray;
 }
+
+.footer-container  .icon{
+    filter: invert(100%);
+}

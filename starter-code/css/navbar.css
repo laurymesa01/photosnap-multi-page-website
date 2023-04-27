@@ -1,6 +1,5 @@
 nav {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    padding: 20px 1em 20px 0;
 }
 .nav-container{
     display: grid;
@@ -10,27 +9,33 @@ nav {
 .nav-container .logo-img{
     display: flex;
     place-content: center;
-    margin-top: 10px;
 }
 
-.logo-img img{
-    height: 70%;
+.nav-container .logo-img img{
+    height: 60%;
     width: 40%;
 }
 
-.nav-container .list-items{
+.nav-container .list-nav-items-container{
     display: flex;
     justify-content: center;
-    margin-top: 10px;
 }
 
-.nav-container li{
+.nav-container .list-nav-items-container li{
     display: inline;
     text-align: center;
     margin-right: 2rem;
 }
 
-.nav-container .button-header-container{
+.nav-container .list-nav-items-container a{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+}
+
+.nav-container .button-nav-container{
     display: flex;
     justify-content: center;
 }
@@ -42,6 +47,11 @@ button{
     width: 30%;
     border: none;
     text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
 }
 
 button:hover{

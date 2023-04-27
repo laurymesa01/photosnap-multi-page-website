@@ -11,9 +11,13 @@ body{
 
 h1{
     text-transform: uppercase;
-    font-weight: bold;
     font-size: 40px;
-    margin-left: 2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 4.16667px;
 }
 
 h3{
@@ -26,11 +30,25 @@ h4{
     font-size: 12px;
 }
 
+hr{
+    color: white;
+    margin-top: 15px;
+    width: 280px;
+    height: 1px;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    margin-bottom: 15px;
+}
+
 a{
     text-decoration: none;
     color: black;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+ul{
+    list-style: none;
 }
 
 .container{
@@ -51,25 +69,59 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.col1 p, .col1 a{
-    margin-left: 5.2em;
-    margin-top: 10px;
+    padding-left: 5em;
 }
 
 .col1 h3{
-    margin-left: 4.5em;
     margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
 }
 
 .col1 h4{
     margin-top: 13px;
-    margin-left: 20px;
+    margin-left: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.col1 p{
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+
+.col1 a{
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+
 }
 
 .col1 .date-author{
     display: flex;
+}
+
+.col{
+    display: flex;
+    align-items: flex-end;
+}
+
+.text{
+    margin-left: 2em;
+    margin-bottom: 3em;
 }
 
 .col2{
@@ -150,4 +202,8 @@ a{
 .col17{
     background: url('../assets/stories/desktop/land-of-dreams.jpg');
     background-size: cover;
+}
+
+.arrow-icon{
+    filter: invert(100%);
 }

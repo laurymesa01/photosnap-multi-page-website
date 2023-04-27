@@ -1,11 +1,54 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans';
 }
 
 body{
-    font-size: 15px;
+    font-family: 'Open Sans';
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 4.16667px;
+}
+
+h3{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+h4{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+hr{
+    color: white;
+    margin-top: 15px;
+    width: 280px;
+    height: 1px;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    margin-bottom: 15px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .container{
@@ -27,17 +70,16 @@ body{
     display: flex;
     flex-direction: column;
     place-content: center;
+    padding: 0 8.5em 0 4em;
 }
 
-.row1 a, .row2 a, .row3 a{
-    margin-top: 20px;
-    margin-left: 5.5em;
-}
 
 .row1 p, .row2 p, .row3 p{
     margin-top: 20px;
-    margin-left: 5.5em;
-    margin-right: 10em;
+    margin-bottom: 35px;
+    line-height: 25px;
+    mix-blend-mode: normal;
+    opacity: 0.6;
 }
 
 .row2{
@@ -56,31 +98,40 @@ body{
 }
 
 .row4 .col1{
-    background: url('../assets/stories/desktop/mountains.jpg');
-    background-size: cover;
+    background-image: url('../assets/stories/desktop/mountains.jpg');
 }
 
 .row4 .col2 {
-    background: url('../assets/stories/desktop/cityscapes.jpg');
-    background-size: cover;
+    background-image: url('../assets/stories/desktop/cityscapes.jpg');
 }
 
 .row4 .col3{
-    background: url('../assets/stories/desktop/18-days-voyage.jpg');
-    background-size: cover;
+    background-image: url('../assets/stories/desktop/18-days-voyage.jpg');
 }
 
 .row4 .col4{
-    background: url('../assets/stories/desktop/architecturals.jpg');
+    background-image: url('../assets/stories/desktop/architecturals.jpg');
+}
+
+.row4 .main-stories-container{
     background-size: cover;
-}
-
-.row4, .row4 a {
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
     color: white;
+    padding: 0 0 2em 2em;
 }
 
-.text{
-    margin-left: 2em;
+.row4 a{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
 }
 
 .row5{
@@ -95,6 +146,10 @@ body{
     align-items: center;
 }
 
+.row5 .icon-container{
+    height: 70px;
+}
+
 .row5 .col2 img{
     margin-top: 25px;
 }
@@ -106,49 +161,15 @@ body{
 .row5 p{
     margin-top: 1em;
     text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    mix-blend-mode: normal;
+    opacity: 0.6;
 }
 
-.icon{
-    filter: invert(90%);
-}
 
-h1{
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 40px;
-    margin-left: 2em;
-}
-
-h3{
-    font-weight: bold;
-    font-size: 18px;
-}
-
-h4{
-    font-weight: bold;
-    font-size: 12px;
-}
-
-hr{
-    color: lightgray;
-    margin-top: 15px;
-    width: 90%;
-}
-
-p{
-    color: gray;
-}
-
-ul{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-    font-weight: bold;
-}
 
 @media screen and (max-width: 768px){
 
