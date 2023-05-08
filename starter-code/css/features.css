@@ -13,6 +13,10 @@ a{
     text-transform: uppercase;
 }
 
+ul{
+    list-style: none;
+}
+
 .features-main-container{
     display: grid;
 }
@@ -48,13 +52,102 @@ a{
     mix-blend-mode: normal;
     opacity: 0.6;
     margin-top: 20px;
+    /* margin-right: 3px; */
 }
 
 .features-main-container .info-features-container img{
     width: 100%;
 }
 
+.features-main-container .cards-features-container{
+    display: grid;
+    height: 800px;
+}
 
-.invite-features-container{
-    border-left: 6px solid #eeee;
+.features-main-container .cards-features-container .row1-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.features-main-container .cards-features-container .row2-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.features-main-container .cards-features-container .col{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    text-align: center;
+    padding: 0 75px;
+}
+
+.features-main-container .cards-features-container .col .img-cards-container{
+    margin-bottom: 50px;
+}
+
+.features-main-container .cards-features-container .col img{
+    height: 100%;
+    width: 15%;
+}
+
+.features-main-container .cards-features-container .col p{
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+
+.features-main-container .cards-features-container .no-photo-card-container{
+    margin-top: 30px;
+}
+
+
+.features-main-container .invite-features-container{
+    background-image: url('../assets/shared/desktop/bg-beta.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-left: 6px solid pink;
+    height:300px;
+    color: white;
+    padding-left: 7em;
+    padding-top: 6em;
+}
+
+.features-main-container .invite-features-container .text-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-main-container .invite-features-container h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 4.16667px;
+    text-transform: uppercase;
+}
+
+.features-main-container .invite-features-container a{
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 2px;
+    margin-right: 15%;
+    margin-top: 50px;
+}
+
+.features-main-container .invite-features-container a:hover{
+    text-decoration: underline;
+}
+
+.features-main-container .invite-features-container .icon{
+    filter: invert(100%);
 }

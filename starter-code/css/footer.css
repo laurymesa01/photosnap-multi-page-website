@@ -41,11 +41,23 @@
 .footer-container .footer-links-container li{
     margin-top: 20px;
     text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .footer-container p{
     margin-top: 27%;
     margin-right: 20%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
 }
 
 .footer-container a{
@@ -58,4 +70,18 @@
 
 .footer-container  .icon{
     filter: invert(100%);
+}
+
+.footer-container .section3 a{
+    height: 16px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 2px;
+}
+
+.footer-container .section3 a:hover{
+    text-decoration: underline;
 }
