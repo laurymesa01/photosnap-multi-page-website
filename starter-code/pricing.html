@@ -5,21 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans"/>
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/pricing.css">
   
   <title>Frontend Mentor | Photosnap Website Challenge</title>
 </head>
 <body>
 
-  Stories
-  Features
-  Pricing
+  <header>
+    <nav>
+      <div class="nav-container">
+        <div class="logo-img">
+          <img src="./assets/shared/desktop/logo.svg" alt="">
+        </div>
+        <div class="list-nav-items-container">
+            <ul>
+              <li>
+                <a href="./stories.html">Stories</a> 
+              </li>
+              <li>
+                <a href="/">Features</a>
+              </li>
+              <li>
+                <a href="./pricing.html">Pricing</a>
+              </li>
+          </ul>
+        </div>
+        <div class="button-nav-container">
+          <button>Get an invite</button>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-  Get an invite
+  <main class="pricing-main-container">
+    <section class="info-pricing-container">
+      <div class="info-pricing">
+        <h1>Pricing</h1>
+        <p>
+          Create a your stories, Photosnap is a platform for photographers and visual storytellers. 
+          It’s the simple way to create and share your photos.
+        </p>
+      </div>
+      <img src="assets/pricing/desktop/hero.jpg" alt="">
+    </section>
 
-  Pricing
-
-  Create a your stories, Photosnap is a platform for photographers and visual storytellers. 
-  It’s the simple way to create and share your photos.
+    <section class="invite-features-container">
+      <div class="text-container">
+        <h1>We're in Beta. <br> Get your invite <br> today!</h1>
+        <a href="">
+          Get an invite
+          <img class="icon" src="./assets/shared/desktop/arrow.svg" alt="">
+        </a>
+      </div>
+    </section>
+  </main>
 
   Monthly
   Yearly
@@ -59,18 +101,54 @@
   Search Engine Indexing
   Custom Analytics
 
-  We're in Beta. Get your invite today!
-  
-  Get an invite
 
-  Home
-  Stories
-  Features
-  Pricing
+  <footer class="footer-container">
+    <div class="footer-icons-container">
+      <img class="icon" src="./assets/shared/desktop/logo.svg" alt="">
+      <ul class="social-media">
+        <li>
+          <img src="./assets/shared/desktop/facebook.svg" alt="">
+        </li>
+        <li>
+          <img src="./assets/shared/desktop/youtube.svg" alt="">
+        </li>
+        <li>
+          <img src="./assets/shared/desktop/twitter.svg" alt="">
+        </li>
+        <li>
+          <img src="./assets/shared/desktop/pinterest.svg" alt="">
+        </li>
+        <li>
+          <img src="./assets/shared/desktop/instagram.svg" alt="">
+        </li>
+      </ul>
+    </div>
 
-  Get an invite
+    <div class="footer-links-container">
+      <ul>
+        <li>
+          <a href="">Home</a>
+        </li>
+        <li>
+          <a href="">Stories</a>
+        </li>
+        <li>
+          <a href="">Features</a>
+        </li>
+        <li>
+          <a href="">Pricing</a>
+        </li>
+      </ul>
+    </div>
 
-  Copyright 2019. All Rights Reserved
+    <div class="section3">
+      <a href="" style="color: white;">
+        Get an invite
+        <img class="icon" src="./assets/shared/desktop/arrow.svg" alt="">
+      </a>
+      <p>Copyright 2019. All Rights Reserved</p>
+    </div>
+  </footer>
 
 </body>
 </html>

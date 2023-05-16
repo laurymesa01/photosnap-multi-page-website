@@ -1,24 +1,26 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+html{
     font-family: 'Open Sans';
 }
+
 
 h1{
     text-transform: uppercase;
     font-size: 40px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
     line-height: 48px;
     letter-spacing: 4.16667px;
 }
 
 h3{
     font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 18px;
     line-height: 25px;
 }
@@ -33,7 +35,7 @@ h4{
 hr{
     color: white;
     margin-top: 15px;
-    width: 280px;
+    width: 70%;
     height: 1px;
     mix-blend-mode: normal;
     opacity: 0.25;
@@ -51,30 +53,34 @@ a{
     font-weight: bold;
 }
 
-.container{
-    display: grid;
-    grid-template-rows: repeat(5, 0.6fr);
-}
-
-.row1{
+.info-section-container .row1-container{
     display: grid;
     grid-template-columns: 2fr  minmax(75px, 3fr);
 }
 
-.row1 .col1{
+.info-section-container .row1-container .info-black{
     background-color: black;
     color: white;
 }
 
-.row1 .col1, .row2 .col2, .row3 .col1{
+.info-section-container .row2-container{
+    display: grid;
+    grid-template-columns: minmax(75px, 3fr) 2fr;
+}
+
+.info-section-container .row3-container{
+    display: grid;
+    grid-template-columns: 2fr  minmax(75px, 3fr);
+}
+
+.info-section-container .info-container{
     display: flex;
     flex-direction: column;
     place-content: center;
     padding: 0 8.5em 0 4em;
 }
 
-
-.row1 p, .row2 p, .row3 p{
+.info-section-container p{
     margin-top: 20px;
     margin-bottom: 35px;
     line-height: 25px;
@@ -82,38 +88,45 @@ a{
     opacity: 0.6;
 }
 
-.row2{
-    display: grid;
-    grid-template-columns: minmax(75px, 3fr) 2fr;
+.info-section-container a{
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
 }
 
-.row3{
-    display: grid;
-    grid-template-columns: 2fr  minmax(75px, 3fr);
+.info-section-container a img{
+    margin-left: 10px;
 }
 
-.row4{
+.info-section-container a:hover{
+    text-decoration: underline;
+}
+
+.info-stories-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    height: 450px;
 }
 
-.row4 .col1{
+.info-stories-container .col1-container{
     background-image: url('../assets/stories/desktop/mountains.jpg');
 }
 
-.row4 .col2 {
+.info-stories-container .col2-container{
     background-image: url('../assets/stories/desktop/cityscapes.jpg');
 }
 
-.row4 .col3{
+.info-stories-container .col3-container{
     background-image: url('../assets/stories/desktop/18-days-voyage.jpg');
 }
 
-.row4 .col4{
+.info-stories-container .col4-container{
     background-image: url('../assets/stories/desktop/architecturals.jpg');
 }
 
-.row4 .main-stories-container{
+.info-stories-container .info-stories{
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -123,42 +136,54 @@ a{
     padding: 0 0 2em 2em;
 }
 
-.row4 a{
+.info-stories-container .info-stories .text-story-container{
+    width: 100%;
+}
+
+
+.info-stories-container a{
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 2px;
     color: white;
-    display: flex;
-    justify-content: space-between;
 }
 
-.row5{
+.info-stories-container a img{
+    margin-left: 30%;
+}
+
+.icon-arrow-white{
+    filter: invert(100%);
+}
+
+.characteristics-info-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    height: 500px;
 }
 
-.row5 .col1, .row5 .col2, .row5 .col3{
+.characteristics-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.row5 .icon-container{
+.characteristics-container .icon-container{
     height: 70px;
 }
 
-.row5 .col2 img{
+.characteristics-container .img-no-limit{
     margin-top: 25px;
 }
 
-.row5 h3{
+.characteristics-container h3{
     margin-top: 40px;
 }
 
-.row5 p{
+.characteristics-container p{
     margin-top: 1em;
     text-align: center;
     font-style: normal;
@@ -171,7 +196,16 @@ a{
 
 
 
-@media screen and (max-width: 768px){
-
+@media (max-width: 887px){
+    .info-section-container{
+        display: grid;
+        grid-template-rows: repeat(3, 700px);
+    }
+    .info-section-container .row1-container{
+        grid-template-columns: 3fr 2fr;
+    } 
+    .info-section-container .info-container{
+        padding: 0 2em 0 2em;
+    }
 }
 

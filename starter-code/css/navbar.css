@@ -1,64 +1,73 @@
 nav {
     padding: 20px 1em 20px 0;
-}
-.nav-container{
     display: grid;
     grid-template-columns: repeat(3, minmax(100px, 1fr));
 }
 
-.nav-container .logo-img{
-    display: flex;
-    place-content: center;
+nav .header-logo-img{
+    text-align: center;
+    margin-top: 8px;
 }
 
-.nav-container .logo-img img{
-    height: 60%;
-    width: 40%;
+nav .header-logo-img img{
+    height: 15px;
+    width: 150px;
 }
 
-.nav-container .list-nav-items-container{
+nav .list-nav-items-container{
     display: flex;
     justify-content: center;
+    margin-top: 8px;
 }
 
-.nav-container .list-nav-items-container li{
+nav .list-nav-items-container li{
     display: inline;
     text-align: center;
-    margin-right: 2rem;
+    margin-right: 40px;
 }
 
-.nav-container .list-nav-items-container a{
+nav .list-nav-items-container a{
     font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 2px;
 }
 
-.nav-container .button-nav-container{
-    display: flex;
-    justify-content: center;
+nav .list-nav-items-container a:hover{
+    opacity: 0.3;
 }
 
-button{
+nav .header-button{
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: black;
     color: white;
     height: 35px;
-    width: 30%;
-    border: none;
+    width: 150px;
     text-transform: uppercase;
-    font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 2px;
 }
 
-button:hover{
-    background-color: lightgray;
+.header-button:hover{
+    background-color: #DFDFDF;
     color: black;
 }
 
-.nav-container a:hover{
-    color: lightgray;
+@media(max-width: 887px){
+    nav .list-nav-items-container li{
+        margin-right: 10px;
+    }
+    nav .header-button{
+        margin-left: 30px;
+    }
+}
+
+@media(max-width: 698px){
+    
 }

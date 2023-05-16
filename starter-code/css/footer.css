@@ -13,23 +13,18 @@
     margin-top: 18%;
 }
 
-.social-media{
+.social-media-container{
     margin-top: 27%;
     display: flex;
     flex-direction: row;
 }
 
-.social-media li{
+.social-media-container li{
     padding-right: 10px;
     cursor: pointer;
 }
 
-.social-media img{
-    filter:grayscale(100%);
-}
-
-.social-media img:hover{
-    filter:grayscale(0%);
+.social-media-container .facebook svg{
 }
 
 .footer-container .footer-links-container{
@@ -85,3 +80,4 @@
 .footer-container .section3 a:hover{
     text-decoration: underline;
 }
+
